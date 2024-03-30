@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/font" rel="stylesheet">
+  
+    
+    <title>Document</title>
+    <style>
+        @keyframes a{
+                0%{
+                    opacity: 0;
+                }
+                100%{
+                    opacity: 1;
+                }
+        }
+        @keyframes b{
+            0%{
+                transform: translateX(-200px);
+            }
+            100%{
+                transform: translateX(0);
+            }
+        }
+        *::selection{
+            background-color: orange;
+            color: white;
+
+        }
+        header{
+            background-color: black;
+            position: fixed; width: 100%;
+            top: 0;
+            padding-top: 5px; padding-bottom: 5px;padding-left: 10px;
+            display: flex;align-items: center;
+            z-index: 99;
+            
+        }
+        @media (max-width:800px){
+            header{
+                flex-direction: column;position: static;
+            }
+            
+            .navigation{
+                font-size: 40px;
+                padding-bottom: 30px;margin-bottom: 5px;
+                border-bottom: 2px white solid;
+                padding-left: 190px;padding-right:190px ;
+                margin-left: 0; margin-right: 0;
+
+            }
+        }
+        @media (min-width:1000px){
+            #n{
+                margin-left: 100px;
+            }
+        }
+        @media (min-width:1300px){
+            #n{
+                margin-left: 180px;
+            }
+        }
+        #n{
+            color: orange;
+        }
+        #logo{
+            color: white;font-size: 30px;
+            font-family: 'Font', sans-serif;font-weight: 50;
+            margin-left: 10px;
+            animation-name: a;animation-duration: 2s;
+        }
+        .navigation{
+            color: white;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-right: 18px;
+            text-decoration: none;
+            animation-name: a;animation-duration: 2s;
+        }
+        .navigation:hover{
+            color: orange;
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+    <header>
+       <img src="Capturee-removebg-preview.png" width="200px" height="160px" style="animation-name: b;animation-duration: 1s;">
+       <h1 id="logo">soufiane espadrilles</h1>
+       <a href="#" class="navigation"  id="n" >Home</a>
+       <a href="#" class="navigation">Shop</a>
+       <a href="#" class="navigation">About</a>
+       <a href="#" class="navigation">Contact</a>
+       <a href="#" class="navigation" style=" font-size: 35px;"><i class="fa fa-shopping-bag"></i>
+    </a>
+    </header>
+    <style>
+        #interface{
+            margin-top: 190px;
+            margin-left: 10%;
+            width: 90%;margin-left: 5%;
+            height: 500px;
+            border-radius: 20px;
+            background-size: cover;
+            background-image: url(Product+Reviews.jpg);
+            padding-top: 100px;padding-left: 100px;
+        }
+       
+        #interface{
+            color: white;
+        }
+        .shop{
+            font-size: 25px;text-decoration: none;font-family: sans-serif;color: white;
+            margin-top: 30px;
+            background-color: orange;
+            padding: 10px; border-radius: 20px;
+        }
+        .shop:hover{
+            opacity: 0.5;
+        }
+        @media (max-width:800px){
+            #interface{
+                overflow-x: hidden;
+                padding-left: 20px;
+            }
+        }
+    </style>
+    
+    
+    <div id="interface">
+        <div >
+            <h1 style="font-family: sans-serif;">Nouvelle collection</h1>
+            <h1 style="font-family: 'font',sans-serif; font-weight: 20;">soufiane <br> espadrilles</h1>
+            <p style="font-family: sans-serif; font-size: 20px; width: 600px;">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quasi illum voluptatem cumque ab, dolorum consequuntur deserunt nostrum nulla eum dolores obcaecati aut impedit quod amet quam autem. Totam, aliquid reiciendis, numquam deserunt at hic ex dignissimos odit culpa, explicabo nostrum! Quidem, voluptatum quod neque ipsam tempora cum ipsum totam ea unde modi impedit? Laboriosam quaerat qui tenetur, quo ea, voluptas dolorum est adipisci ipsam ut vitae itaque velit natus fugit molestias odit ullam ex non rerum repudiandae q
+            </p>
+            <a href="#" class="shop">shop now</a>
+        </div>
+    </div>
+    <center><h1 style="font-family: sans-serif; font-size: 30px; color: white;">Most awesome</h1>
+        <h1 style="font-family:'font', sans-serif; font-size: 30px; color: white;font-weight: 10;">shoes and boots</h1>
+   <br> <hr style="color: aliceblue; width: 70px;"> <br></center>
+   <style>
+    .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    @media  (max-width:800px){
+        .container{
+            flex-direction: column; align-items: center;
+        }
+        .item{
+               
+               margin-bottom: 20px;width: 80%;
+        }
+        .shop{
+            font-size: 20px;
+        }
+    }
+    @media (min-width:801px){
+        .item{
+            width: 30%;
+        }
+    }
+    .item{
+       position: relative;
+        background-color: black;
+        
+    }
+    #shoping{
+        position: absolute; 
+        top: 10px; right: 10px;padding: 10px;font-size: 20px;
+        background-color: black; color: orange; border-radius: 20px; 
+        opacity: 0.7; z-index: -1;
+
+    }
+    #sale{
+        position: absolute; 
+        top: 10px; left: 10px;padding: 10px;font-size: 20px;
+        background-color: black; color: gray; border-radius: 20px; 
+        opacity: 0.7;
+    }
+
+    .photo{
+        position: absolute;
+        width: 100%;
+        height: 400px;
+        position: relative;
+        border-radius: 20px;
+    }
+    .photo:hover{
+        opacity: 0.7;
+    }
+    .item:hover #shoping{
+        z-index: 6;
+    }
+    span{
+        color: silver;
+    }
+   </style>
+   <div class="container">
+    <div class="item">
+        <img src="nb.jpg" class="photo">
+            <font id="sale">sale!</font>
+            <i class="fa fa-shopping-bag" id="shoping"></i>
+        <br>
+      <font style="margin-left: 20px; ">
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+    </font>
+    <br>
+    <font style="font-family: 'font',sans-serif;color: white;margin-left: 20px;font-size: 25px;font-weight: 10 ;">New balance d homme</font>
+    <font style="color: rgb(128, 85, 5);margin-left: 20px;font-size: 25px; text-decoration: line-through;">150dhs</font><font style="color: orange; font-size: 35px; text-decoration: none;">120dhs</font>
+    <br>
+    <br><center><a href="#" class="shop">add to cart</a></center>
+   </div>
+   <div class="item">
+    <img src="femme.jpg" class="photo">
+    
+        <i class="fa fa-shopping-bag" id="shoping"></i>
+    <br>
+    <span class="fa fa-star checked" style="margin-left: 20px ;" ></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <br>
+    <font style="font-family: 'font',sans-serif;color: white;margin-left: 20px;font-size: 25px;font-weight: 10 ;">New balance de femme</font>
+    <font style="color: orange;margin-left: 20px;font-size: 35px;">190dhs</font>
+    <br><br><center><a href="#" class="shop">add to cart</a></center>
+</div>
+<div class="item">
+    <img src="zara.jpg" class="photo">
+        
+        <i class="fa fa-shopping-bag" id="shoping"></i>
+    <br>
+    <span class="fa fa-star checked" style="margin-left: 20px;"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <br>
+    <font style="font-family: 'font',sans-serif;color: white;margin-left: 20px;font-size: 25px;font-weight: 10 ;">zara d homme</font>
+    <br><font style="color: orange;margin-left: 20px;font-size: 35px;">190dhs</font>
+    <br><br><center><a href="#" class="shop">add to cart</a></center>
+</div>
+   </div>
+   <br><br>
+  <center> <hr style="background-color: white;width: 70%;"></center>
+  <br>
+  <center><h1 style="font-family: sans-serif;color: orange;">les ensembles</h1>
+<h1 style="color: white;font-weight: 10; font-family: 'font',sans-serif;font-size: 33px;">kitmat wa3rin diyal rjal</h1>
+</center>
+<center> <hr style="background-color: white;width: 70%;"></center>
+<style>
+    @media (max-width:800px){
+        .c11{
+            flex-direction: column;
+            margin-bottom: 360px;
+        }
+    }
+   
+</style>
+<div style="display: flex; height: 400px;" class="c11">
+<div style="flex: 1;align-items: center; padding: 50px;">
+    <h1 style="color: white;font-weight: 10; font-family: 'font',sans-serif;font-size: 38px;">jbna kitmat zwinin akhir makayn w b2atmina nadiya</h1>
+    <br>
+   <center> <a href="#" class="shop">Visit now</a> </center>
+</div>
+<div style="flex: 1;padding: 10px;padding-right: 20px;">
+<img src="istockphoto-1321017606-612x612.jpg" width="100%" height="100%" style="border-radius: 25px;"></div>
+</div>
+<center> <hr style="background-color: white;width: 70%;"></center>
+<br>
+<div class="container">
+    <div class="item">
+        <img src="Capture.PNG" class="photo">
+            
+            <i class="fa fa-shopping-bag" id="shoping"></i>
+        <br>
+      <font style="margin-left: 20px; ">  <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+    </font>
+    <br>
+    <font style="font-family: 'font',sans-serif;color: white;margin-left: 20px;font-size: 25px;font-weight: 10 ;">kitma f </font><font style="font-family: 'font',sans-serif;color: rgb(0, 242, 255);font-size: 35px;font-weight: 10 ;">bleu ciel</font>
+   <br> <font style="color: orange;margin-left: 20px;font-size: 35px; ">220dhs</font>
+    <br>
+    <br><center><a href="#" class="shop">add to cart</a></center>
+   </div>
+   <div class="item">
+    <img src="Capture1.PNG" class="photo">
+    <font id="sale" style="opacity: 0.9;" >sale!</font>
+        <i class="fa fa-shopping-bag" id="shoping"></i>
+    <br>
+    <span class="fa fa-star checked" style="margin-left: 20px ;" ></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <br>
+    <font style="font-family: 'font',sans-serif;color: white;margin-left: 20px;font-size: 25px;font-weight: 10 ;">kitma f </font><font style="font-family: 'font',sans-serif;color: rgb(255, 255, 255);font-size: 35px;font-weight: 10 ;">blanc</font>
+    <font style="color: orange;margin-left: 20px;font-size: 35px;">220dhs</font>
+    <br><br><center><a href="#" class="shop">add to cart</a></center>
+</div>
+<div class="item">
+    <img src="Capture2.PNG" class="photo">
+        
+        <i class="fa fa-shopping-bag" id="shoping"></i>
+    <br>
+    <span class="fa fa-star checked" style="margin-left: 20px;"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <br>
+    <font style="font-family: 'font',sans-serif;color: white;margin-left: 20px;font-size: 25px;font-weight: 10 ;">kitma f </font><font style="font-family: 'font',sans-serif;color: gray;font-size: 35px;font-weight: 10 ;">Noire</font>
+    <br><font style="color: orange;margin-left: 20px;font-size: 35px;">220dhs</font>
+    <br><br><center><a href="#" class="shop">add to cart</a></center>
+</div>
+   </div>
+   <br>
+   <hr style="background-color: white;"><br>
+   <style>
+    @media (max-width:800px){
+        .c22{
+            flex-direction: column;padding-left: 7px;justify-content: space-between;
+        }
+    }
+   </style>
+ <div style="display: flex;justify-content: space-evenly;" class="c22">
+<div style="flex-basis: 30%;">
+  <center> <i class="fa fa-truck" style="color: white;font-size: 45px;"></i>
+        <h1 style="font-weight: 10;color: white;font-size: 35px;font-family: 'font',sans serif;">Free Shipping</h1></center> 
+    <p style="color: white; font-size: 18px;">Enjoy the treat of free shipping on all your Halloween must-haves</p>
+
+    
+</div>
+<div style="flex-basis: 30%;"> <center> <i class="fa fa-lock" style="color: white;font-size: 45px;"></i>
+    <h1 style="font-weight: 10;color: white;font-size: 35px;font-family: 'font',sans serif;">Secure Payments</h1></center> 
+    <p style="color: white; font-size: 18px;">Shop with confidence knowing that your payments are securely processed for a worry-free Halloween experience</p>
+</div>
+<div style="flex-basis: 30%;"> <center> <i class="fa fa-search" style="color: white;font-size: 45px;"></i>
+    <h1 style="font-weight: 10;color: white;font-size: 35px;font-family: 'font',sans serif;">Order Tracking</h1></center> 
+    <p style="color: white; font-size: 18px;">Stay in the know with real-time order tracking to ensure your Halloween treasures arrive right on time</p>
+</div>
+</div>
+<br>
+   <hr style="background-color: white;"><br>
+   <style>
+    
+    #r{
+        background-color: aliceblue;font-size: 30px;
+        text-decoration: none; padding: 15px;color: black;
+        border-radius: 50%;
+    }
+    #r:hover{
+        opacity: 0.5;
+    }
+   </style>
+   <center>
+    <a href="#" class="fa fa-facebook" id="r"></a>
+<a href="#" class="fa fa-twitter" id="r"></a>
+<a href="#" class="fa fa-google" id="r"></a>
+<a href="#" class="fa fa-linkedin" id="r"></a>
+<a href="#" class="fa fa-youtube" id="r"></a>
+<a href="#" class="fa fa-instagram" id="r"></a>
+   </center>
+   <br>
+   <hr style="background-color: white;"><br>
+</body>
+</html>
