@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.cdnfonts.com/css/font" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+  </head>
+
+<body style="background-color: black;">
+    <style>
+       #logo{
+        display: inline-block; margin-left: 5px;color: green;
+        animation-name: a;animation-duration: 3s;
+        font-weight: 700;
+       }
+       @keyframes a{
+        0%{
+            transform: translateX(-300px); opacity: 0;
+
+        }
+        50%{
+          transform: translateX(-300px); opacity: 0;
+        }
+        100%{
+            transform:translateX(0); opacity: 1;
+        }
+        
+       }
+      .menu{
+        color: white; 
+        font-size: 24px;
+        font-family: 'font'; font-weight: 10; margin-left: 20px;
+        transition-duration: 0.4s;
+        margin-right: 0;margin-top: 0;
+      }
+      .menu:hover{
+        color: orangered;
+        text-decoration: none;
+        font-size:29px ;
+        text-shadow: 20px 0 15px white;
+      }
+      @keyframes b{
+        0%{
+          transform: translateY(-300px);
+        }
+        100%{
+          transform: translateY(0);
+        }
+      }
+    </style>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"  style="border-bottom-left-radius: 25px;border-bottom-right-radius: 25px;animation-name: b;animation-duration: 1.5s;">
+        <a class="navbar-brand" href="#"><img src="OFPPT.png" width="130px" style="animation-name: a;animation-duration: 3s;" ><h1 id="logo">D<font style="color: silver;">ev</font><font style="color: rgb(58, 130, 245);">104</font></h1>
+        <button style="position: absolute; right: 10px;top: 50px;" class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav" style="margin-left: 200px;">
+            <li class="nav-item "  >
+                <a class="menu" style="color: orangered;position: relative;"  href="#">Home</a>
+              </li>
+            <li class="nav-item ">
+              <a class=" menu " href="#" >emploi</a>
+            </li>
+            <li class=" nav-item">
+                <a class=" menu "  href="#" >professeurs</a>
+              </li>
+              <li class="nav-item">
+                <a class=" menu " href="#" >modules</a>
+              </li>
+            
+          </ul>
+        </div>
+      </nav>
+
+<style>
+
+</style>
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" style="margin-top: 20px;">
+          <div class="carousel-item active">
+                <div  style="width: 100%; height: 600px;background-image: url(bg1.webp);background-size: cover;padding: 40px;background-attachment: fixed;padding-top: 150px;">
+                    <p class="dev" ><font class="badge badge-danger"> Le développement digital</font> est l’ensemble des technologies et des solutions implémentées pour permettre à une entreprise de rester compétitive dans un monde de plus en plus <font class="badge badge-warning" style="background-color: orangered;"> numérique</font></p>
+                   <center> <a href="#" class="visit">visit now</a></center>
+                </div>
+          </div>
+          <div class="carousel-item" >
+            <div style="width: 100%; height: 600px;background-image: url(bg2.jpg);background-size: cover;padding: 40px;background-attachment: fixed;padding-top: 150px;">
+              <p class="dev" style="color: black;" ><font class="badge badge-danger"> Le développement digital</font> est l’ensemble des technologies et des solutions implémentées pour permettre à une entreprise de rester compétitive dans un monde de plus en plus <font class="badge badge-warning" style="background-color: orangered;"> numérique</font></p>
+             <center> <a href="#" class="visit">visit now</a> </center>
+            </div>
+          </div>
+          <div class="carousel-item">
+            
+                <div style="width: 100%; height: 600px;background-image: url(abc.jfif);background-size: cover;padding: 40px; padding-top: 150px; background-attachment: fixed;">
+                  <p class="dev" ><font class="badge badge-danger"> Le développement digital</font> est l’ensemble des technologies et des solutions implémentées pour permettre à une entreprise de rester compétitive dans un monde de plus en plus <font class="badge badge-warning" style="background-color: orangered;"> numérique</font></p>
+                <center> <a href="#" class="visit">visit now</a></center> 
+                </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <style>
+        .visit{
+          text-decoration: none;
+          font-family: sans-serif;
+          font-size:30px;
+          background-color: orangered;
+          color: black;
+          padding: 10px;
+          font-weight: 700;
+          border-radius: 20px;
+          transition-duration: 0.4s;
+          
+          
+        }
+        .visit:hover{
+          box-shadow: inset 160px 0 black;
+          text-decoration: none;
+          color: orangered;
+        }
+        @media (max-width:970px){
+          .dev{
+            font-size: 25px;font-weight: 600;
+          }
+         
+        }
+        @media (min-width:971px){
+                  .dev{font-size: 38px;font-weight: 900;}
+          }
+        .dev{
+          color: white;
+          width: 80%;
+          
+          font-weight: 600;
+          
+        }
+      </style>
+      <br>
+     <center> <hr style="background-color: white;width: 30%;height: 4px;border-radius: 10px;"><h1 style="font-size: 45px;font-family: 'font'; font-weight: 10; color: white;">Emploi</h1>
+      <hr style="background-color: white;width: 30%;height: 4px;border-radius: 10px;">
+    </center>
+    <br>
+    <div  class="row" style="justify-content: space-evenly;">
+      <div class="col-lg-6 col-sm-10">
+              <table class="table table-striped table-borderless  table-dark table-hover text-center" >
+                <tr>
+                  <th style="background-color: black;border: none;"></th>
+                  <th>8h30 <br> 9h30</th>
+                  <th>9h30 <br> 10h30</th>
+                  <th>10h30 <br> 11h30</th>
+                  <th>11h30 <br> 12h30</th>
+                  <th>12h30 <br> 13h30</th>
+                </tr>
+                <tr>
+                  <td>lundi</td>
+                  <td colspan="5">programmation orienté objet <br>BOUFOUNAS LAHCEN <br>salle inforamtique 1</td>
+                  
+                </tr>
+                <tr>
+                  <td>mardi</td>
+                  <td colspan="5">
+                    sites web statiques <br>EL EZZABY FOUZIA <br>salle inforamtique 1
+
+                  </td>
+                  
+                </tr>
+                <tr>
+                  <td>mercredi</td>
+                  <td  colspan="5">
+                    sites web statiques <br>EL EZZABY FOUZIA <br>salle inforamtique 1
+                  </td>
+                  
+                </tr>
+                <tr>
+                  <td>jeudi</td>
+                  <td colspan="5">
+                    programmation orienté objet <br>BOUFOUNAS LAHCEN <br>salle inforamtique 1
+                  </td>
+                 
+                </tr>
+                <tr>
+                  <td>vendredi</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>samedi</td>
+                  <td colspan="2">
+                    francais <br> FADLA SOUKAYNA <br> salle 2 
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  
+                </tr>
+              </table>
+      </div>
+      <div class=" col-lg-6 col-sm-10" style="display: flex;align-items: center;">
+              <img src="istockphoto-588586552-612x612-removebg-preview.png" width="100%" height="90%">
+      </div>
+    </div>
+    <br>
+    <center> <hr style="background-color: white;width: 30%;height: 4px;border-radius: 10px;"><h1 style="font-size: 45px;font-family: 'font'; font-weight: 10; color: white;">professeurs</h1>
+     <hr style="background-color: white;width: 30%;height: 4px;border-radius: 10px;">
+   </center>
+   <br>
+   <div style="justify-content: space-evenly;" class="row">
+    <style>
+      .item{
+        
+        height: 400px;
+        position: relative;
+        background-color: silver;
+        border-radius: 15px;
+       
+      }
+      @media(max-width:970px){
+        .photo{
+          width: 50%;
+          left: 150px;
+        }
+      }
+      @media(min-width:971px){
+        .photo{width: 100%;left: 0px;}
+      }
+      .photo{ 
+        background-color: rgb(255, 255, 255,.4);
+        border-radius: 50%;
+        position: absolute;
+        
+        height: 250px;
+        bottom: 70px;
+        
+        transition-duration: 0.2s;
+        border: 5px orangered solid;
+        outline: 1px rgb(128, 128, 128) solid;
+      }
+      .h{
+        position: relative;
+        top: 260px;
+        text-align: center;
+        visibility: hidden;
+        
+      }
+      .item:hover .h{
+        visibility: inherit;
+        transition-duration: 0.2s;
+      }
+      .item:hover .photo{
+               transform: translateY(-100px);
+      }
+    </style>
+    <div class="item col-lg-3 col-sm-10 my-1 ">
+      <img src="lahcen.png"  class="photo">
+      <p class="h"><font class="badge badge-danger" style="font-size: 30px;">Boufonas lahcen</font>
+      <br><font style="color: orangered;" class="spinner spinner-grow"></font><font style="color: orange;" class="spinner spinner-grow"></font><font style="color: orangered;" class="spinner spinner-grow"></font>
+      <font style="color: orangered;" class="spinner spinner-grow"></font><font style="color: orange;" class="spinner spinner-grow"></font><font style="color: orangered;" class="spinner spinner-grow"></font>
+      <font style="color: orangered;" class="spinner spinner-grow"></font><font style="color: orange;" class="spinner spinner-grow"></font>
+      </p>
+     </div>
+     <div class="item col-lg-3 col-sm-10 my-1 ">
+      <img src="fouzia.png"  class="photo">
+      <p class="h"><font class="badge badge-danger" style="font-size: 30px;">El Ezzaby Fouzia</font>
+        <br><font style="color: orangered;" class="spinner spinner-grow"></font><font style="color: orange;" class="spinner spinner-grow"></font><font style="color: orangered;" class="spinner spinner-grow"></font>
+        <font style="color: orangered;" class="spinner spinner-grow"></font><font style="color: orange;" class="spinner spinner-grow"></font><font style="color: orangered;" class="spinner spinner-grow"></font>
+        <font style="color: orangered;" class="spinner spinner-grow"></font><font style="color: orange;" class="spinner spinner-grow"></font>
+      </p>
+     </div>
+     <div class="item col-lg-3 col-sm-10 my-1 ">
+      <img src="soukayna.png"  class="photo">
+      <p class="h"><font class="badge badge-danger" style="font-size: 30px;">Fadla Soukayna</font>
+        <br><font style="color: orangered;" class="spinner spinner-grow"></font><font style="color: orange;" class="spinner spinner-grow"></font><font style="color: orangered;" class="spinner spinner-grow"></font>
+        <font style="color: orangered;" class="spinner spinner-grow"></font><font style="color: orange;" class="spinner spinner-grow"></font><font style="color: orangered;" class="spinner spinner-grow"></font>
+        <font style="color: orangered;" class="spinner spinner-grow"></font>
+      </p>
+     </div>
+  </div>
+  <br>
+  <center> <hr style="background-color: white;width: 30%;height: 4px;border-radius: 10px;"><h1 style="font-size: 45px;font-family: 'font'; font-weight: 10; color: white;">modules</h1>
+   <hr style="background-color: white;width: 30%;height: 4px;border-radius: 10px;">
+ </center>
+ <br>
+ <center><h1 style="font-family: sans-serif;font-weight: 800; font-size: 37px;color: orange;">Sites web statiques</h1></center>
+ <br>
+ <div class="row " style="justify-content: space-evenly;align-items: center;">
+  <div class="col-lg-6 col-sm-10 alert alert-danger " style="font-size: 25px;border-radius: 20px;">
+    Un site <font class="badge badge-danger" style="font-size: 30px;"> web statique</font> ne nécessite pas de programmation web ou de conception de base de données. Les sites statiques sont les plus simples à créer et conviennent parfaitement aux sites de petite taille
+  </div>
+  <div class="col-lg-6 col-sm-10" >
+    <img src="bg1.webp" width="100%" height="100%" style="border-radius: 20px;">
+      
+  </div>
+ </div>
+<br>
+
+<center><h1 style="font-family: sans-serif;font-weight: 800; font-size: 37px;color: orange;">programmation orienté object</h1></center>
+<br>
+<div class="row " style="justify-content: space-evenly;align-items: center;">
+ <div class="col-lg-6 col-sm-10 alert alert-danger " style="font-size: 25px;border-radius: 20px;">
+   La programmation <font class="badge badge-danger" style="font-size: 30px;"> orientée objet  (POO) </font> , ou programmation par objet, est un paradigme de programmation informatique. Elle consiste en la définition et l'interaction de briques logicielles appelées objets 
+ </div>
+ <div class="col-lg-6 col-sm-10" >
+   <img src="phyton.webp" width="100%" height="100%" style="border-radius: 20px;">
+     
+ </div>
+</div>
+    
+<br>
+
+
+<center><h1 style="font-family: sans-serif;font-weight: 800; font-size: 37px;color: orange;">francais</h1></center>
+<br>
+ <div class="row " style="justify-content: space-evenly;align-items: center;">
+  <div class="col-lg-6 col-sm-10 alert alert-danger " style="font-size: 25px;border-radius: 20px;">
+    Le <font class="badge badge-danger" style="font-size: 30px;"> francais </font> est une langue indo-européenne de la famille des langues romanes dont les locuteurs sont appelés francophones. Elle est parfois surnommée la langue moliére
+  </div>
+  <div class="col-lg-6 col-sm-10" >
+    <img src="nap.webp" width="100%" height="100%" style="border-radius: 20px;">
+      
+  </div>
+ </div>
+
+ <br>
+
+ <hr style="background-color: white;height: 4px;">
+ <center>
+  <h1 style="font-size: 45px;font-family: 'font'; font-weight: 10; color: green;">OF<font style="color: gray;">PP</font><font style="color: rgb(82, 82, 254);">t</font></h1>
+</center>
+<div class="row pt-2 pb-2">
+  <div class="col-md-4 text-center">
+    <h1 style="color: silver;font-size: 50px;"><i class="fa fa-graduation-cap"></i></h1>
+    <h1 style="color: silver;font-size: 50px;">1/2 million</h1>
+    <h1 style="color: silver;font-size: 50px;">des places pédagogiques</h1>
+  </div>
+  <div class="col-md-4 text-center">
+    <h1 style="color: silver;font-size: 50px;"><i class='fa fa-globe'></i></h1>
+    <h1 style="color: silver;font-size: 50px;">10000</h1>
+    <h1 style="color: silver;font-size: 50px;">colaborateurs</h1>
+  </div>
+  <div class="col-md-4 text-center">
+    <h1 style="color: silver;font-size: 50px;">
+      <i class='fa fa-user'></i>
+    </h1>
+    <h1 style="color: silver;font-size: 50px;">480</h1>
+    <h1 style="color: silver;font-size: 50px;">métiers</h1>
+  </div>
+</div>
+<hr style="background-color: white;height: 4px;">
+
+
+     
+   
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  
+</body>
+</html>
